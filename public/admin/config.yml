@@ -3,31 +3,22 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: "media" # Media files will be stored in the repo under images/uploads
 collections:
-  - label: "Pages"
-    name: "pages"
+  - label: "Leadership Team"
+    name: "Leadership Team"
     files:
-      - label: "About Page"
-        name: "about"
-        file: "src/posts/about.json"
+      - label: "Leadership Team"
+        name: "leadership_team"
+        file: "src/posts/leadership_team.json"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
+          - label: Positions
+            name: positions
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
-      - label: "Locations Page"
-        name: "locations"
-        file: "src/posts/locations.json"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Locations
-            name: locations
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}
+              - {label: Positions Category, name: positions_category, widget: string}
+              - label: Position Title
+                name: position_title
+                widget: list
+                fields:
+                  - {label: Name, name: name, widget: string}
+                  - {label: Bio, name: bio, widget: text}
+                  - {label: Photo, name: photo, widget: image}
