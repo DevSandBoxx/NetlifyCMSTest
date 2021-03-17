@@ -3,25 +3,21 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: "media" # Media files will be stored in the repo under images/uploads
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
-    folder: "src/_posts/blog/blog.json" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "text"}
-    extension: json
-    format: json
-  - name: "cheese" # Used in routes, e.g., /admin/collections/blog
-    label: "Cheese" # Used in the UI
-    folder: "src/_posts/cheese/cheese.json" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "cheese"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "text"}
-    extension: json
-    format: json
+  - label: "Pages"
+    name: "pages"
+    files:
+    - label: "Blog Page"
+      name: "blog" # Used in routes, e.g., /admin/collections/blog
+      file: "src/posts/blog.json"
+      fields: # The fields for each document, usually in front matter
+        - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Body", name: "body", widget: "text"}
+    - label: "Cheese Page"
+      name: "cheese" # Used in routes, e.g., /admin/collections/blog
+      file: "src/posts/cheese.json"
+      slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+      fields: # The fields for each document, usually in front matter
+        - {label: "Layout", name: "layout", widget: "hidden", default: "cheese"}
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Body", name: "body", widget: "text"}
