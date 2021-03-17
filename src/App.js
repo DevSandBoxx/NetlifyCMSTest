@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap';
-import Post from "./Post";
+
 // import postlist from "../posts"
 
 export default function App() {
