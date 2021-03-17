@@ -6,18 +6,28 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-    - label: "Blog Page"
-      name: "blog" # Used in routes, e.g., /admin/collections/blog
-      file: "src/posts/blog.json"
-      fields: # The fields for each document, usually in front matter
-        - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Body", name: "body", widget: "text"}
-    - label: "Cheese Page"
-      name: "cheese" # Used in routes, e.g., /admin/collections/blog
-      file: "src/posts/cheese.json"
-      slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-      fields: # The fields for each document, usually in front matter
-        - {label: "Layout", name: "layout", widget: "hidden", default: "cheese"}
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Body", name: "body", widget: "text"}
+      - label: "About Page"
+        name: "about"
+        file: "src/posts/about.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Position, name: position, widget: string}
+              - {label: Photo, name: photo, widget: image}
+      - label: "Locations Page"
+        name: "locations"
+        file: "src/posts/locations.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Locations
+            name: locations
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Address, name: address, widget: string}
