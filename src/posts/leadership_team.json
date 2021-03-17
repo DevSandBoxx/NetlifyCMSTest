@@ -10,6 +10,17 @@
         }
       ],
       "positions_category": "Board of Directors"
+    },
+    {
+      "positions_category": "Curriculum Directors",
+      "people": [
+        {
+          "name": "Kenneth",
+          "title": "Director of Curriculum",
+          "bio": "Kenneth is Bong Bong",
+          "photo": "/media/logo-2-.png"
+        }
+      ]
     }
   ]
 }
