@@ -1,0 +1,15 @@
+{
+  "positions": [
+    {
+      "people": [
+        {
+          "name": "Max",
+          "title": "CEO",
+          "bio": "Max is a max who does maxy things",
+          "photo": "/media/max.png"
+        }
+      ],
+      "positions_category": "Board of Directors"
+    }
+  ]
+}
