@@ -15,10 +15,11 @@ collections:
             widget: list
             fields:
               - {label: Positions Category, name: positions_category, widget: string}
-              - label: Position Title
-                name: position_title
+              - label: People
+                name: people
                 widget: list
                 fields:
                   - {label: Name, name: name, widget: string}
+                  - {label: Official Title, name: title, widget: string}
                   - {label: Bio, name: bio, widget: text}
                   - {label: Photo, name: photo, widget: image}
