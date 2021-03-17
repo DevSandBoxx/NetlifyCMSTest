@@ -11,7 +11,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "string"}
+      - {label: "Body", name: "body", widget: "text"}
     extension: json
     format: json
   - name: "cheese" # Used in routes, e.g., /admin/collections/blog
@@ -22,6 +22,6 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "cheese"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Body", name: "body", widget: "string"}
+      - {label: "Body", name: "body", widget: "text"}
     extension: json
     format: json
