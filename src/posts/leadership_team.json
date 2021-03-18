@@ -5,8 +5,7 @@
         {
           "name": "Max",
           "title": "CEO",
-          "bio": "Max is a max who does maxy things",
-          "photo": "media/max.png"
+          "bio": "Max is a max who does maxy things"
         }
       ],
       "positions_category": "Board of Directors"
@@ -17,8 +16,7 @@
         {
           "name": "Kenneth",
           "title": "Director of Curriculum",
-          "bio": "Kenneth is Bong Bong",
-          "photo": "/src/media/max.png"
+          "bio": "Kenneth is Bong Bong"
         }
       ]
     }
