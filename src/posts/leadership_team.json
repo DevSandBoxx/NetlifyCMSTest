@@ -6,7 +6,7 @@
           "name": "Max",
           "title": "CEO",
           "bio": "Max is a max who does maxy thing",
-          "photo": "/src/media/max.png"
+          "photo": "media/bt6.png"
         }
       ],
       "positions_category": "Board of Directors"
@@ -18,7 +18,7 @@
           "name": "Kenneth",
           "title": "Director of Curriculum",
           "bio": "Kenneth is Bong Bong",
-          "photo": "/src/media/max.png"
+          "photo": "media/bt6.png"
         }
       ]
     }
