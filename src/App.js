@@ -1,18 +1,15 @@
 import { Container } from 'react-bootstrap';
-
-// import postlist from "./_posts/blog/2021-03-17-blog-2.json";
-// import * as postlist from "./_posts/blog";
-
+import leadershipTeamJSON from "./posts/leadership_team.json";
 
 export default function App() {
 
-  // const excerptList = postlist.map(post => {
-  //   return post.content.split(" ").slice(0, 20).join(" ") + "..."
-  // })
 
   return (
     <Container>
-
+      <p>{leadershipTeamJSON.positions[0].positions_category}</p>
+      <p>{leadershipTeamJSON.positions[0].people[0].name}</p>
+      <p>{leadershipTeamJSON.positions[0].people[0].title}</p>
+      <p>{leadershipTeamJSON.positions[0].people[0].bio}</p>
     </Container>
   );
 }
