@@ -1,5 +1,6 @@
 import { Container } from 'react-bootstrap';
 import leadershipTeamJSON from "./posts/leadership_team.json";
+import Button from "./MyButton.js";
 
 export default function App() {
 
@@ -18,6 +19,8 @@ export default function App() {
       <p>{leadershipTeamJSON.positions[1].people[0].name}</p>
       <p>{leadershipTeamJSON.positions[1].people[0].title}</p>
       <p>{leadershipTeamJSON.positions[1].people[0].bio}</p>
+
+      <Button></Button>
     </Container>
   );
 }
